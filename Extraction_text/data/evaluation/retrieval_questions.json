@@ -1,0 +1,11 @@
+[
+  {
+    "question": "What is Retrieval-Augmented Generation?",
+    "expected_sources": [
+      {
+        "source": "rag_notes.pdf",
+        "pages": [2, 3]
+      }
+    ]
+  }
+]

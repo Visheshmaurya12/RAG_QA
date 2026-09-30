@@ -1,0 +1,108 @@
+
+[
+  {
+    "id": "Q01",
+    "question": "What is Retrieval-Augmented Generation (RAG)?",
+    "answerable": true,
+    "expected_concepts": ["retrieval", "external knowledge", "generation"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q02",
+    "question": "Why is RAG used with large language models?",
+    "answerable": true,
+    "expected_concepts": ["relevant context", "grounded answers"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q03",
+    "question": "What are the main stages of a RAG pipeline?",
+    "answerable": true,
+    "expected_concepts": ["retrieval", "context", "generation"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q04",
+    "question": "What is a text embedding?",
+    "answerable": true,
+    "expected_concepts": ["vector representation", "semantic meaning"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q05",
+    "question": "How does semantic search help a RAG system?",
+    "answerable": true,
+    "expected_concepts": ["query meaning", "relevant passages"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q06",
+    "question": "Why is a document split into chunks before retrieval?",
+    "answerable": true,
+    "expected_concepts": ["smaller passages", "retrieval relevance"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q07",
+    "question": "What is the purpose of an embedding model in RAG?",
+    "answerable": true,
+    "expected_concepts": ["text to vectors", "semantic similarity"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q08",
+    "question": "What role does a vector database play in RAG?",
+    "answerable": true,
+    "expected_concepts": ["store vectors", "search similar vectors"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q09",
+    "question": "What is the difference between retrieval and generation?",
+    "answerable": true,
+    "expected_concepts": ["find evidence", "generate response"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q10",
+    "question": "Why should a RAG answer include citations?",
+    "answerable": true,
+    "expected_concepts": ["traceability", "source verification"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q11",
+    "question": "How can irrelevant retrieved chunks affect an answer?",
+    "answerable": true,
+    "expected_concepts": ["irrelevant context", "answer quality"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q12",
+    "question": "What are the limitations of a RAG system?",
+    "answerable": true,
+    "expected_concepts": ["retrieval errors", "unsupported answers"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q13",
+    "question": "Explain how retrieval and generation work together in RAG.",
+    "answerable": true,
+    "expected_concepts": ["retrieve relevant context", "generate grounded answer"],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q14",
+    "question": "According to the provided PDFs, what is the exact publication year of the most recent paper?",
+    "answerable": false,
+    "expected_concepts": [],
+    "expected_source_pages": []
+  },
+  {
+    "id": "Q15",
+    "question": "What is my college roll number according to the provided PDFs?",
+    "answerable": false,
+    "expected_concepts": [],
+    "expected_source_pages": []
+  }
+]
