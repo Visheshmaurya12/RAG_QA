@@ -5,7 +5,7 @@
     "question": "What is Retrieval-Augmented Generation (RAG)?",
     "answerable": true,
     "expected_concepts": ["retrieval", "external knowledge", "generation"],
-    "expected_source_pages": []
+    "expected_source_pages": [{"source": "RAG_NOTES.pdf", "page": 1}]
   },
   {
     "id": "Q02",

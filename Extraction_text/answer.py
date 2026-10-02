@@ -3,16 +3,16 @@ import os
 
 import chromadb
 from dotenv import load_dotenv
-from google import genai
+from groq import Groq 
 from sentence_transformers import SentenceTransformer
 
 
 load_dotenv()
 
-API_KEY = os.getenv("GEMINI_API_KEY")
+API_KEY = os.getenv("GROQ_API_KEY")
 MODEL_NAME = os.getenv(
-    "GEMINI_MODEL",
-    "gemini-2.5-flash",
+    "GROQ_MODEL",
+    "openai/gpt-oss-20b",
 )
 
 DB_PATH = "data/chroma_db"
@@ -108,10 +108,10 @@ Write the answer with source labels in the text.
 def main():
     if not API_KEY:
         raise RuntimeError(
-            "GEMINI_API_KEY is missing. Add it to your .env file."
+            "GROQ_API_KEY is missing. Add it to your .env file."
         )
 
-    client = genai.Client(api_key=API_KEY)
+    client = Groq(api_key=API_KEY)
 
     db = chromadb.PersistentClient(path=DB_PATH)
     collection = db.get_collection(name=COLLECTION_NAME)
@@ -148,13 +148,16 @@ def main():
         prompt = build_prompt(question, evidence)
 
         try:
-            response = client.models.generate_content(
+            response = client.chat.completions.create(
                 model=MODEL_NAME,
-                contents=prompt,
+                messages=[
+                    {"role": "user", "content": prompt}
+                ],
+                max_completion_tokens=2048,
             )
 
             print("\n========== ANSWER ==========\n")
-            print(response.text or "The model returned no text.")
+            print(response.choices[0].message.content or "The model returned no text.")
 
             print("\n========== SOURCES ==========")
 
