@@ -1,0 +1,845 @@
+[
+  {
+    "id": "Q02",
+    "question": "Why is RAG used with large language models?",
+    "answerable": true,
+    "api_failure": false,
+    "answer": "INSUFFICIENT_EVIDENCE: The provided PDFs do not contain enough information to answer this question.",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": true,
+    "expected_concepts": [
+      "relevant context",
+      "grounded answers"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.2605748176574707
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.27611130475997925
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.32868415117263794
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.35197651386260986
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.35229623317718506
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q03",
+    "question": "What are the main stages of a RAG pipeline?",
+    "answerable": true,
+    "api_failure": false,
+    "answer": "INSUFFICIENT_EVIDENCE: The provided PDFs do not contain enough information to answer this question.",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": true,
+    "expected_concepts": [
+      "retrieval",
+      "context",
+      "generation"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.3282921314239502
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.36449289321899414
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.41007786989212036
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.43309545516967773
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.4392535090446472
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q04",
+    "question": "What is a text embedding?",
+    "answerable": true,
+    "api_failure": false,
+    "answer": "INSUFFICIENT_EVIDENCE: The provided PDFs do not contain enough information to answer this question.",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": true,
+    "expected_concepts": [
+      "vector representation",
+      "semantic meaning"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.3579379916191101
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.3853297233581543
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.40549182891845703
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.40595579147338867
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.4172166585922241
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q06",
+    "question": "Why is a document split into chunks before retrieval?",
+    "answerable": true,
+    "api_failure": false,
+    "answer": "A document is split into chunks to create small passages that can be retrieved independently [S2]. This allows each chunk to focus on one coherent idea while maintaining enough context to be understood [S2], providing the actual text passage used for retrieval and context [S2].",
+    "cited_labels": [
+      "S2"
+    ],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": false,
+    "expected_concepts": [
+      "smaller passages",
+      "retrieval relevance"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.22551560401916504
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.22977209091186523
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.3403894305229187
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.3487429618835449
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 6,
+        "page_end": 6,
+        "distance": 0.3636307716369629
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q05",
+    "question": "How does semantic search help a RAG system?",
+    "answerable": true,
+    "api_failure": false,
+    "answer": "INSUFFICIENT_EVIDENCE: The provided PDFs do not contain enough information to answer this question.",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": true,
+    "expected_concepts": [
+      "query meaning",
+      "relevant passages"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.26177263259887695
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.28927385807037354
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.33813703060150146
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.345350980758667
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.374548077583313
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q07",
+    "question": "What is the purpose of an embedding model in RAG?",
+    "answerable": true,
+    "api_failure": false,
+    "answer": "INSUFFICIENT_EVIDENCE: The provided PDFs do not contain enough information to answer this question.",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": true,
+    "expected_concepts": [
+      "text to vectors",
+      "semantic similarity"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.2678389549255371
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.273051381111145
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.3264486789703369
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.3606908321380615
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.36594152450561523
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q08",
+    "question": "What role does a vector database play in RAG?",
+    "answerable": true,
+    "api_failure": false,
+    "answer": "INSUFFICIENT_EVIDENCE: The provided PDFs do not contain enough information to answer this question.",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": true,
+    "expected_concepts": [
+      "store vectors",
+      "search similar vectors"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.27108973264694214
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.2926844358444214
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.3548910617828369
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.3792458772659302
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.3811638355255127
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q10",
+    "question": "Why should a RAG answer include citations?",
+    "answerable": true,
+    "api_failure": false,
+    "answer": "INSUFFICIENT_EVIDENCE: The provided PDFs do not contain enough information to answer this question.",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": true,
+    "expected_concepts": [
+      "traceability",
+      "source verification"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.24990451335906982
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.3192180395126343
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.3275890350341797
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.3427157402038574
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.3430137038230896
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q01",
+    "question": "What is Retrieval-Augmented Generation (RAG)?",
+    "answerable": true,
+    "api_failure": true,
+    "answer": "API_FAILURE: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": true,
+    "appears_to_abstain": false,
+    "expected_concepts": [
+      "retrieval",
+      "external knowledge",
+      "generation"
+    ],
+    "expected_source_pages": [
+      {
+        "source": "RAG_NOTES.pdf",
+        "page": 1
+      }
+    ],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.23131632804870605
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.2957158088684082
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.33542323112487793
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.3510247468948364
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.3676748275756836
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q09",
+    "question": "What is the difference between retrieval and generation?",
+    "answerable": true,
+    "api_failure": true,
+    "answer": "API_FAILURE: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": false,
+    "expected_concepts": [
+      "find evidence",
+      "generate response"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.35140180587768555
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.36324572563171387
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.39071524143218994
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.39653658866882324
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.4045114517211914
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q11",
+    "question": "How can irrelevant retrieved chunks affect an answer?",
+    "answerable": true,
+    "api_failure": true,
+    "answer": "API_FAILURE: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": false,
+    "expected_concepts": [
+      "irrelevant context",
+      "answer quality"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.2659340500831604
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.27913641929626465
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.3038560152053833
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.31060492992401123
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.33354926109313965
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q12",
+    "question": "What are the limitations of a RAG system?",
+    "answerable": true,
+    "api_failure": true,
+    "answer": "API_FAILURE: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": false,
+    "expected_concepts": [
+      "retrieval errors",
+      "unsupported answers"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.3301823139190674
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.38676124811172485
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.43108510971069336
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.43666350841522217
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.44604259729385376
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q13",
+    "question": "Explain how retrieval and generation work together in RAG.",
+    "answerable": true,
+    "api_failure": true,
+    "answer": "API_FAILURE: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": false,
+    "expected_concepts": [
+      "retrieve relevant context",
+      "generate grounded answer"
+    ],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "distance": 0.2262919545173645
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.30357295274734497
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.32790476083755493
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.34204208850860596
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.3465791940689087
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q14",
+    "question": "According to the provided PDFs, what is the exact publication year of the most recent paper?",
+    "answerable": false,
+    "api_failure": true,
+    "answer": "API_FAILURE: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": false,
+    "expected_concepts": [],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.36718225479125977
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.38237297534942627
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.3914222717285156
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.4224205017089844
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "distance": 0.4515828490257263
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  },
+  {
+    "id": "Q15",
+    "question": "What is my college roll number according to the provided PDFs?",
+    "answerable": false,
+    "api_failure": true,
+    "answer": "API_FAILURE: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}",
+    "cited_labels": [],
+    "invalid_citation_labels": [],
+    "citation_labels_valid": true,
+    "retrieval_hit_expected_page": null,
+    "appears_to_abstain": false,
+    "expected_concepts": [],
+    "expected_source_pages": [],
+    "retrieved_sources": [
+      {
+        "label": "S1",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.3014073371887207
+      },
+      {
+        "label": "S2",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "distance": 0.3298403024673462
+      },
+      {
+        "label": "S3",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "distance": 0.36293911933898926
+      },
+      {
+        "label": "S4",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.38695836067199707
+      },
+      {
+        "label": "S5",
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "distance": 0.39210617542266846
+      }
+    ],
+    "manual_answer_support_check": "NOT_REVIEWED",
+    "manual_citation_support_check": "NOT_REVIEWED"
+  }
+]

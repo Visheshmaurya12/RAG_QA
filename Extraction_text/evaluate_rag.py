@@ -2,11 +2,13 @@
 import json
 import os
 import re
+import time
 from pathlib import Path
 
 import chromadb
 from dotenv import load_dotenv
 from google import genai
+from groq import Groq
 from sentence_transformers import SentenceTransformer
 
 
@@ -27,7 +29,7 @@ TOP_K = 5
 if not API_KEY:
     raise ValueError("GEMINI_API_KEY is missing from your .env file.")
 
-client = genai.Client(api_key=API_KEY)
+client = Groq(api_key=API_KEY)
 
 
 def load_collection():
@@ -104,12 +106,32 @@ RETRIEVED EVIDENCE:
 {chr(10).join(evidence)}
 """
 
-    response = client.models.generate_content(
-        model=MODEL_NAME,
-        contents=prompt
-    )
-
-    return response.text or ""
+    for attempt in range(2):
+        try:
+            response = client.chat.completions.create(
+                model=MODEL_NAME,
+                messages=[
+                    {"role": "user", "content": prompt}
+                ],
+                max_completion_tokens=2048,
+            )
+            return response.choices[0].message.content or ""
+        except Exception as exc:
+            msg = str(exc)
+            # Parse retryDelay from error payload when present
+            retry_match = re.search(r"retryDelay.*?(\d+)s", msg)
+            wait = int(retry_match.group(1)) + 2 if retry_match else 20
+            is_retryable = (
+                "429" in msg
+                or "503" in msg
+                or "RESOURCE_EXHAUSTED" in msg
+                or "UNAVAILABLE" in msg
+            )
+            if attempt == 0 and is_retryable:
+                print(f"  Retryable error ({msg[:60]}…). Waiting {wait}s then retrying.")
+                time.sleep(wait)
+            else:
+                raise
 
 
 def page_matches(expected, source):
@@ -153,7 +175,13 @@ def main():
             except json.JSONDecodeError:
                 pass
 
-    processed_ids = {r.get("id") for r in results if r.get("id")}
+    # Only skip questions that were previously answered successfully (not API failures)
+    processed_ids = {
+        r.get("id") for r in results
+        if r.get("id") and not r.get("api_failure")
+    }
+    # Remove failed entries from results list so they can be re-added cleanly
+    results = [r for r in results if not r.get("api_failure")]
 
     for index, item in enumerate(questions, start=1):
         question_id = item["id"]
@@ -170,6 +198,8 @@ def main():
         if sources:
             try:
                 answer = generate_answer(question, sources)
+                # Throttle to stay within 5 RPM free-tier limit
+                time.sleep(13)
             except Exception as e:
                 answer = f"API_FAILURE: {e}"
                 api_failure = True

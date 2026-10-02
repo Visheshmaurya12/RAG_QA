@@ -1,0 +1,197 @@
+[
+  {
+    "id": "Q01",
+    "question": "What is Retrieval-Augmented Generation (RAG)?",
+    "answerable": true,
+    "expected_pages": [
+      {
+        "source": "RAG_NOTES.pdf",
+        "page": 1
+      }
+    ],
+    "retrieved_sources": [
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "text_preview": "RAG DATASET: COLLECTION & PREPARATION Practical class notes for the Academic Question Answering Syst..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "text_preview": "1. What Does \u201cDataset\u201d Mean in a RAG Project? In machine learning, \u201cdataset\u201d often means a collectio..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "text_preview": "\u2022 Check whether the PDF contains selectable text or only scanned page images. \u2022 For scanned files, O..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "text_preview": "Chunk field Purpose chunk_index Records the chunk's order within the document. document_version Help..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "text_preview": "8. Dataset Quality Checks Quality check Question to ask What to do if it fails Relevance Does this d..."
+      }
+    ]
+  },
+  {
+    "id": "Q02",
+    "question": "Why is RAG used with large language models?",
+    "answerable": true,
+    "expected_pages": [],
+    "retrieved_sources": [
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "text_preview": "1. What Does \u201cDataset\u201d Mean in a RAG Project? In machine learning, \u201cdataset\u201d often means a collectio..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "text_preview": "RAG DATASET: COLLECTION & PREPARATION Practical class notes for the Academic Question Answering Syst..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "text_preview": "Chunk field Purpose chunk_index Records the chunk's order within the document. document_version Help..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "text_preview": "8. Dataset Quality Checks Quality check Question to ask What to do if it fails Relevance Does this d..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "text_preview": "\u2022 Check whether the PDF contains selectable text or only scanned page images. \u2022 For scanned files, O..."
+      }
+    ]
+  },
+  {
+    "id": "Q03",
+    "question": "What are the main stages of a RAG pipeline?",
+    "answerable": true,
+    "expected_pages": [],
+    "retrieved_sources": [
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "text_preview": "RAG DATASET: COLLECTION & PREPARATION Practical class notes for the Academic Question Answering Syst..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "text_preview": "1. What Does \u201cDataset\u201d Mean in a RAG Project? In machine learning, \u201cdataset\u201d often means a collectio..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "text_preview": "\u2022 Check whether the PDF contains selectable text or only scanned page images. \u2022 For scanned files, O..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "text_preview": "Several questions absent from the collection Checks whether the system avoids guessing. Do not claim..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "text_preview": "Chunk field Purpose chunk_index Records the chunk's order within the document. document_version Help..."
+      }
+    ]
+  },
+  {
+    "id": "Q13",
+    "question": "Explain how retrieval and generation work together in RAG.",
+    "answerable": true,
+    "expected_pages": [],
+    "retrieved_sources": [
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "text_preview": "RAG DATASET: COLLECTION & PREPARATION Practical class notes for the Academic Question Answering Syst..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "text_preview": "1. What Does \u201cDataset\u201d Mean in a RAG Project? In machine learning, \u201cdataset\u201d often means a collectio..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "text_preview": "\u2022 Check whether the PDF contains selectable text or only scanned page images. \u2022 For scanned files, O..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "text_preview": "Chunk field Purpose chunk_index Records the chunk's order within the document. document_version Help..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "text_preview": "Several questions absent from the collection Checks whether the system avoids guessing. Do not claim..."
+      }
+    ]
+  },
+  {
+    "id": "Q14",
+    "question": "According to the provided PDFs, what is the exact publication year of the most recent paper?",
+    "answerable": false,
+    "expected_pages": [],
+    "retrieved_sources": [
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "text_preview": "Avoid collecting random internet PDFs without checking their source, accuracy, version, and permissi..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 3,
+        "page_end": 3,
+        "text_preview": "\u2022 Check whether the PDF contains selectable text or only scanned page images. \u2022 For scanned files, O..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 2,
+        "page_end": 2,
+        "text_preview": "revision date. Medium Lab manuals and assignments Supports practical, experiment, and assignment que..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 5,
+        "page_end": 5,
+        "text_preview": "Several questions absent from the collection Checks whether the system avoids guessing. Do not claim..."
+      },
+      {
+        "source": "RAG_NOTES.pdf",
+        "page_start": 4,
+        "page_end": 4,
+        "text_preview": "Chunk field Purpose chunk_index Records the chunk's order within the document. document_version Help..."
+      }
+    ]
+  }
+]
