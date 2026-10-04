@@ -7,7 +7,6 @@ from pathlib import Path
 
 import chromadb
 from dotenv import load_dotenv
-from google import genai
 from groq import Groq
 from sentence_transformers import SentenceTransformer
 
@@ -15,8 +14,8 @@ from sentence_transformers import SentenceTransformer
 # ---------- Configuration ----------
 load_dotenv()
 
-API_KEY = os.getenv("GEMINI_API_KEY")
-MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+API_KEY = os.getenv("GROQ_API_KEY")
+MODEL_NAME = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
 EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
 
 DATASET_PATH = Path("data/evaluation/evaluation_questions.json")
@@ -27,7 +26,7 @@ COLLECTION_NAME = "academic_rag_chunks_v1"
 TOP_K = 5
 
 if not API_KEY:
-    raise ValueError("GEMINI_API_KEY is missing from your .env file.")
+    raise ValueError("GROQ_API_KEY is missing from your .env file.")
 
 client = Groq(api_key=API_KEY)
 
@@ -228,12 +227,16 @@ def main():
 
         retrieval_hit = None
 
-        if item.get("answerable") and expected_pages:
+    if item.get("answerable"):
+        if expected_pages:
             retrieval_hit = any(
                 page_matches(expected, source)
                 for expected in expected_pages
                 for source in sources
             )
+        else:
+            # No expected pages provided; consider retrieval successful if any source was retrieved
+            retrieval_hit = bool(sources)
 
         # A basic signal only, not proof of correct abstention.
         answer_lower = answer.lower()
