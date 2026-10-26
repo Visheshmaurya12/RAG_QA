@@ -32,7 +32,17 @@ if collection.count() == 0:
 
 embedding_model = SentenceTransformer(EMBEDDING_MODEL)
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title="Academic RAG API", version="1.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class AskRequest(BaseModel):
     question: str
@@ -83,3 +93,7 @@ async def ask(request: AskRequest):
     ]
 
     return AnswerResponse(answer=answer_text, sources=sources)
+ 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("api:app", host="127.0.0.1", port=8000, reload=True)
